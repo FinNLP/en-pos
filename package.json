@@ -1,0 +1,16 @@
+{
+  "name": "en-pos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Corvi <alex@arrayy.com>",
+  "license": "MIT",
+  "dependencies": {
+    "en-inflectors": "^1.0.1",
+    "en-lexicon": "^1.0.1",
+    "humannames": "^1.0.0"
+  }
+}
