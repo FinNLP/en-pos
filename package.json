@@ -9,8 +9,9 @@
   "author": "Alex Corvi <alex@arrayy.com>",
   "license": "MIT",
   "dependencies": {
+    "cities-list": "^1.0.1",
     "en-inflectors": "^1.0.1",
     "en-lexicon": "^1.0.1",
-    "humannames": "^1.0.0"
+    "humannames": "^1.0.3"
   }
 }
