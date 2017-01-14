@@ -1,5 +1,5 @@
 # en-pos
-A more accurate implementation of Brill POS tagger.
+A better English POS tagger written in JavaScript
 
 ### How good is it?
 As of 14 Jan 2017, this library scored **95.518%** at the [Penn Treebank](http://www.cis.upenn.edu/~treebank/) test (less than a point away from being a [state of the art tagger](https://www.aclweb.org/aclwiki/index.php?title=POS_Tagging_(State_of_the_art))).
