@@ -20437,7 +20437,7 @@
   },
   {
     "tokens": ["Excluding","the","British","snack-food","business","acquired","in","July",",","snack-food","international","tonnage","jumped","40","%",",","with","sales","strong","in","Spain",",","Mexico","and","Brazil","."],
-    "tags": ["NNP","DT","JJ","NN","NN","VBN","IN","NNP",",","NN","JJ","NN","VBD","CD","SYM",",","IN","NNS","JJ","IN","NNP",",","NNP","CC","NNP","."]
+    "tags": ["VBG","DT","JJ","NN","NN","VBN","IN","NNP",",","NN","JJ","NN","VBD","CD","SYM",",","IN","NNS","JJ","IN","NNP",",","NNP","CC","NNP","."]
   },
   {
     "tokens": ["Total","snack-food","profit","rose","30","%","."],
