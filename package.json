@@ -1,10 +1,10 @@
 {
   "name": "en-pos",
   "version": "1.0.0",
-  "description": "",
+  "description": "A better English POS tagger written in JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/test && node diagnosis1 && node diagnosis2"
   },
   "author": "Alex Corvi <alex@arrayy.com>",
   "license": "MIT",
@@ -13,5 +13,28 @@
     "en-inflectors": "^1.0.1",
     "en-lexicon": "^1.0.1",
     "humannames": "^1.0.3"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexcorvi/en-pos.git"
+  },
+  "keywords": [
+    "pos",
+    "tagger",
+    "tagging",
+    "part",
+    "of",
+    "speach",
+    "brill",
+    "tagger",
+    "tag"
+  ],
+  "bugs": {
+    "url": "https://github.com/alexcorvi/en-pos/issues"
+  },
+  "homepage": "https://github.com/alexcorvi/en-pos#readme"
 }
