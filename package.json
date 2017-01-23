@@ -1,8 +1,8 @@
 {
   "name": "en-pos",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A better English POS tagger written in JavaScript",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "node test/test && node diagnosis1 && node diagnosis2"
   },
