@@ -1,6 +1,6 @@
 {
   "name": "en-pos",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A better English POS tagger written in JavaScript",
   "main": "./lib/index.js",
   "scripts": {
@@ -20,7 +20,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexcorvi/en-pos.git"
+    "url": "git+https://github.com/finnlp/en-pos.git"
   },
   "keywords": [
     "pos",
@@ -34,7 +34,7 @@
     "tag"
   ],
   "bugs": {
-    "url": "https://github.com/alexcorvi/en-pos/issues"
+    "url": "https://github.com/finnlp/en-pos/issues"
   },
-  "homepage": "https://github.com/alexcorvi/en-pos#readme"
+  "homepage": "https://github.com/finnlp/en-pos#readme"
 }
