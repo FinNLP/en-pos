@@ -30,14 +30,14 @@ var tags = enpos(["this","is","my","sentence"],null,true).tags;
 
 #### TL:DR;
 
-- When smoothing is enabled: **96.28%** accuracy
-- When smoothing is disabled: **94.38%** accuracy
+- When smoothing is enabled: **96.28%** accuracy (processing 132K tokens in 38 seconds)
+- When smoothing is disabled: **94.38%** accuracy (processing 132K tokens in 3 seconds)
 
 As of 25 Jan 2017, this library scored **96.28%** at the [Penn Treebank](http://www.cis.upenn.edu/~treebank/) test (0.3% away from being a [state of the art tagger](https://www.aclweb.org/aclwiki/index.php?title=POS_Tagging_(State_of_the_art))).
 
 Being written in JavaScript, I think it's safe to say that this is the most accurate JavaScript POS tagger, since the only JS library I know of is [pos-js](https://github.com/neopunisher/pos-js) which when I tested on the same treebank scored **87.8%**, though it was faster than my implementation when smoothing is enabled.
 
-However, if performance is what's you're after rather than accuracy, then you have the option to disable smoothing in this library and this alone will increase performance by ten folds making this library even faster than pos-js but with far better accuracy (**94.38%**).
+However, if performance is what's you're after rather than accuracy, then you have the option to disable smoothing in this library and this will marginally increase performance making this library even faster than pos-js but with far better accuracy (**94.38%**).
 
 ## Credits
 * This project is an optimization and (almost complete) re-writing of [Compendium](https://github.com/Ulflander/compendium-js)'s POS tagger.
