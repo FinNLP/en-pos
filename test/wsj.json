@@ -25,7 +25,7 @@
   },
   {
     "tokens": ["A","Tucson","Electric","spokesman","said","the","utility","was","disappointed","by","the","commission","'s","decision","and","'","concerned","about","the","financial","integrity","of","the","company","."],
-    "tags": ["DT","NNP","NNP","NN","VBD","DT","NN","VBD","VBN","IN","DT","NN","POS","NN","CC","\"","JJ","IN","DT","JJ","NN","IN","DT","NN","."]
+    "tags": ["DT","NNP","NNP","NN","VBD","DT","NN","VBD","VBN","IN","DT","NN","POS","NN","CC","\"","VBN","IN","DT","JJ","NN","IN","DT","NN","."]
   },
   {
     "tokens": ["South","Korean","President","Roh","Tae","Woo",",","brushing","aside","suggestions","that","the","won","be","revalued","again",",","said","the","currency","'s","current","level","against","the","dollar","is","'","appropriate",".","'"],
@@ -21557,7 +21557,7 @@
   },
   {
     "tokens": ["Paul","Asquith",",","associate","professor","at","the","Massachusetts","Institute","of","Technology","'s","Sloan","School","of","Management",",","citing","a","pattern","of","junk-bond","default","rates","that","are","low","in","the","early","years","after","issuance","and","rise","later",",","says",",","'","We","'re","now","in","a","period","where","we","'re","starting","to","see","defaults","from","the","big","issue","years","of","1984","to","1986",".","'"],
-    "tags": ["NNP","NNP",",","NN","NN","IN","DT","NNP","NNP","IN","NNP","POS","NNP","NNP","IN","NNP",",","VBG","DT","NN","IN","NN","NN","NNS","WDT","VBP","JJ","IN","DT","JJ","NNS","IN","NN","CC","VBP","RB",",","VBZ",",","\"","PRP","VBP","RB","IN","DT","NN","WRB","PRP","VBP","VBG","TO","VB","NNS","IN","DT","JJ","NN","NNS","IN","CD","TO","CD",".","\""]
+    "tags": ["NNP","NNP",",","NN","NN","IN","DT","NNP","NNP","IN","NNP","POS","NNP","NNP","IN","NNP",",","VBG","DT","NN","IN","NN","JJ","NNS","WDT","VBP","JJ","IN","DT","JJ","NNS","IN","NN","CC","VBP","RB",",","VBZ",",","\"","PRP","VBP","RB","IN","DT","NN","WRB","PRP","VBP","VBG","TO","VB","NNS","IN","DT","JJ","NN","NNS","IN","CD","TO","CD",".","\""]
   },
   {
     "tokens": ["Mark","Bachmann",",","a","senior","vice","president","at","Standard","&","Poor","'s","Corp.",",","confirms","that","there","is","'","increasing","concern","about","the","future","liquidity","of","the","junk","bond","market",".","'"],
@@ -21585,7 +21585,7 @@
   },
   {
     "tokens": ["'","It","'s","possible","to","have","a","10","%","default","rate","in","one","year",",","because","we","'re","already","seeing","big","problems","in","the","midst","of","a","pretty","strong","economy","."],
-    "tags": ["\"","PRP","VBZ","JJ","TO","VB","DT","CD","SYM","NN","NN","IN","CD","NN",",","IN","PRP","VBP","RB","VBG","JJ","NNS","IN","DT","NN","IN","DT","RB","JJ","NN","."]
+    "tags": ["\"","PRP","VBZ","JJ","TO","VB","DT","CD","SYM","JJ","NN","IN","CD","NN",",","IN","PRP","VBP","RB","VBG","JJ","NNS","IN","DT","NN","IN","DT","RB","JJ","NN","."]
   },
   {
     "tokens": ["I","'m","certainly","not","comfortable","saying","we","'ve","seen","the","bottom",".","'"],
