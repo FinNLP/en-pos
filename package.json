@@ -1,6 +1,6 @@
 {
   "name": "en-pos",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A better English POS tagger written in JavaScript",
   "main": "./lib/index.js",
   "scripts": {
@@ -9,10 +9,10 @@
   "author": "Alex Corvi <alex@arrayy.com>",
   "license": "MIT",
   "dependencies": {
-    "cities-list": "^1.0.1",
-    "en-inflectors": "^1.0.1",
-    "en-lexicon": "^1.0.5",
-    "humannames": "^1.0.3"
+    "cities-list": "^1.0.3",
+    "en-inflectors": "^1.0.2",
+    "en-lexicon": "^1.0.6",
+    "humannames": "^1.0.5"
   },
   "directories": {
     "test": "test"
