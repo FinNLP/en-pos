@@ -1,6 +1,6 @@
 {
   "name": "en-pos",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A better English POS tagger written in JavaScript",
   "main": "./lib/index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   "dependencies": {
     "cities-list": "^1.0.1",
     "en-inflectors": "^1.0.1",
-    "en-lexicon": "^1.0.1",
+    "en-lexicon": "^1.0.5",
     "humannames": "^1.0.3"
   },
   "directories": {
@@ -28,7 +28,7 @@
     "tagging",
     "part",
     "of",
-    "speach",
+    "speech",
     "brill",
     "tagger",
     "tag"
