@@ -17,22 +17,29 @@ const enpos = require("en-pos");
 var tags = enpos(["this","is","my","sentence"]).tags;
 console.log(tags);
 // ["DT","VBZ","PRP$","NN"]
+
+// disable smoothing:
+// 10 times faster but slightly less accurate (see below)
+var tags = enpos(["this","is","my","sentence"],null,true).tags;
+
 ```
 
 > This project does **not** include a lexer, so you have to pass an array of tokens into it. I highly recommend [my own lexer](https://github.com/alexcorvi/lexed) which is **~99%** compliant with the Penn Treebank test.
 
-### How good is it?
+### Accuracy and performance
 
-As of 25 Jan 2017, this library scored **95.543%** at the [Penn Treebank](http://www.cis.upenn.edu/~treebank/) test (less than a point away from being a [state of the art tagger](https://www.aclweb.org/aclwiki/index.php?title=POS_Tagging_(State_of_the_art))).
+#### TL:DR;
 
-As for JavaScript, I think it's safe to say that this is the most accurate JavaScript POS tagger, since the only implementation I know of is [pos-js](https://github.com/neopunisher/pos-js) which when I tested on the same treebank, it scored **87.8%**, though it was faster than my implementation.
+- When smoothing is enabled: **96.28%** accuracy
+- When smoothing is disabled: **94.38%** accuracy
 
-There are however, more accurate libraries, like [NLP4J](https://emorynlp.github.io/nlp4j/) (97% accuracy) or [standford's POS tagger](http://nlp.stanford.edu/software/tagger.shtml) (also 97% accuracy) but those are marginally slower than this library.
+As of 25 Jan 2017, this library scored **96.28%** at the [Penn Treebank](http://www.cis.upenn.edu/~treebank/) test (0.3% away from being a [state of the art tagger](https://www.aclweb.org/aclwiki/index.php?title=POS_Tagging_(State_of_the_art))).
 
-So I like to think that what I'm trying to build here is something in between inaccurate yet very fast libraries and an accurate yet marginally slower libraries.
+Being written in JavaScript, I think it's safe to say that this is the most accurate JavaScript POS tagger, since the only JS library I know of is [pos-js](https://github.com/neopunisher/pos-js) which when I tested on the same treebank scored **87.8%**, though it was faster than my implementation when smoothing is enabled.
 
+However, if performance is what's you're after rather than accuracy, then you have the option to disable smoothing in this library and this alone will increase performance by ten folds making this library even faster than pos-js but with far better accuracy (**94.38%**).
 
 ## Credits
 * This project is an optimization and (almost complete) re-writing of [Compendium](https://github.com/Ulflander/compendium-js)'s POS tagger.
 * **Compendium**'s tagger itself was based on **[fasttag](https://github.com/mark-watson/fasttag_v2)**.
-* **Fasttag** was based on [Eric Brill's POS tagger](https://en.wikipedia.org/wiki/Brill_tagger).
+* **Fasttag** is based on [Eric Brill's POS tagger](https://en.wikipedia.org/wiki/Brill_tagger).
