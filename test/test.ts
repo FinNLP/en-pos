@@ -1,10 +1,9 @@
-const pos = require("../lib/index.js");
+const Tag = require("../dist/index.js").Tag;
 const wsj = require("./wsj.json");
 var tested = 0;
 var correct = 0;
 var wrong = 0;
 var diagnosis = [];
-
 
 console.log(" 	");
 console.log("	---------------------------");
@@ -13,7 +12,7 @@ console.log("	Starting Penn Treebank test");
 wsj.forEach((sample,index)=>{
 	if(index%1000 === 0) console.log("	",index);
 	if(index === wsj.length - 1) console.log("	",index);
-	pos(sample.tokens).tags.forEach((answer,index,tags)=>{
+	new Tag(sample.tokens).initial().smooth().tags.forEach((answer,index,tags)=>{
 		tested = tested + 1;
 		var expected = sample.tags[index];
 		if(answer === expected) correct = correct + 1;

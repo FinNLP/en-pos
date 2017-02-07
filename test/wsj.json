@@ -65,7 +65,7 @@
   },
   {
     "tokens": ["The","proposed","holding","company","'s","primary","purpose","would","be","to","allow","Great","American","to","continue","engaging","in","real","estate","development","activities",",","it","said","."],
-    "tags": ["DT","JJ","NN","NN","POS","JJ","NN","MD","VB","TO","VB","NNP","NNP","TO","VB","JJ","IN","JJ","NN","NN","NNS",",","PRP","VBD","."]
+    "tags": ["DT","JJ","NN","NN","POS","JJ","NN","MD","VB","TO","VB","NNP","NNP","TO","VB","VBG","IN","JJ","NN","NN","NNS",",","PRP","VBD","."]
   },
   {
     "tokens": ["Those","activities","generated","$","26.1","million","in","operating","profit","last","year","."],
@@ -277,7 +277,7 @@
   },
   {
     "tokens": ["'","Besides",",","we","have","enough","on","our","plate","."],
-    "tags": ["\"","RB",",","PRP","VBP","NN","IN","PRP$","NN","."]
+    "tags": ["\"","RB",",","PRP","VBP","RB","IN","PRP$","NN","."]
   },
   {
     "tokens": ["There","is","plenty","of","work","to","be","done","on","what","we","have","."],
@@ -4269,7 +4269,7 @@
   },
   {
     "tokens": ["Last","year",",","Morgan","Grenfell","shut","down","its","ailing","U.K.","securities","operations","."],
-    "tags": ["JJ","NN",",","NNP","NNP","VBD","RB","PRP$","VBG","NN","NNS","NNS","."]
+    "tags": ["JJ","NN",",","NNP","NNP","VBD","RB","PRP$","VBG","NNP","NNS","NNS","."]
   },
   {
     "tokens": ["Mr.","Craven","said","his","move","to","the","chairmanship","means","he","will","take","a","less","active","role","in","the","day-to-day","management","of","the","group",",","but","he","added","that","the","merchant","bank","'s","strategic","focus","remains","unchanged","."],
@@ -4853,7 +4853,7 @@
   },
   {
     "tokens": ["Volume","was","an","active","643.3","million","shares",",","about","double","the","recent","levels","but","down","from","959.3","million","the","previous","day",",","which","U.K.","traders","have","dubbed","'","Manic","Monday",".","'"],
-    "tags": ["NN","VBD","DT","JJ","CD","CD","NNS",",","IN","RB","DT","JJ","NNS","CC","RB","IN","CD","CD","DT","JJ","NN",",","WDT","NN","NNS","VBP","VBN","\"","NNP","NNP",".","\""]
+    "tags": ["NN","VBD","DT","JJ","CD","CD","NNS",",","IN","RB","DT","JJ","NNS","CC","RB","IN","CD","CD","DT","JJ","NN",",","WDT","NNP","NNS","VBP","VBN","\"","NNP","NNP",".","\""]
   },
   {
     "tokens": ["Prices","opened","strongly","on","the","basis","of","Monday","'s","Wall","Street","rally","and","yesterday","'s","gains","in","Tokyo","."],
