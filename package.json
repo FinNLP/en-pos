@@ -1,6 +1,6 @@
 {
   "name": "en-pos",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A better English POS tagger written in JavaScript",
   "main": "./dist/index.js",
   "types":"./dist/index.d.ts",
@@ -19,7 +19,6 @@
   "directories": {
     "test": "test"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/finnlp/en-pos.git"
