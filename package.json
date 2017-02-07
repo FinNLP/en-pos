@@ -12,8 +12,8 @@
   "license": "MIT",
   "dependencies": {
     "cities-list": "^1.0.3",
-    "en-inflectors": "^1.0.2",
-    "en-lexicon": "^1.0.6",
+    "en-inflectors": "^1.0.7",
+    "en-lexicon": "^1.0.8",
     "humannames": "^1.0.5"
   },
   "directories": {
