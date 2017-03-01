@@ -40,13 +40,18 @@ export interface MetaObject {
 	meta?:any
 }
 
+export interface Result {
+	tokens:Array<string>,
+	tags:Array<Object>,
+	confidence:Array<number>
+}
 
 class Tag {
 
 
 
 	public tokens:		Array<string> 		= [];
-	public tags:		Array<Object> 		= [];
+	public tags:		Array<string> 		= [];
 	public confidence:	Array<number> 		= [];
 	public meta:		Array<MetaObject>	= [];
 	public blocked:		Array<boolean> 		= [];
@@ -69,7 +74,7 @@ class Tag {
 
 
 
-	public initial = function():ClassDecorator{
+	public initial = function():Result{
 		for(let i = 0; i < this.tokens.length; i++) {
 			let token = this.tokens[i];
 			let meta = this.meta[i];
@@ -214,7 +219,7 @@ class Tag {
 
 
 
-	public smooth = function(){
+	public smooth = function():Result{
 		this.PreBrill();
 		this.Brill();
 		this.PostBrill();
