@@ -1,23 +1,27 @@
-// modules
+
 import inflectors = require("en-inflectors");
 import lexicon = require("en-lexicon");
-// initial taggers
-import itNonLetters from "./tagging/non_letters";
-import itLexiconLookup from "./tagging/lexicon";
-import itGivenNames from "./tagging/given_names";
+
+import {conditions as brillConditions} from "./smoothing/brill_conditions";
+import {rules as brillRules} from "./smoothing/brill_rules";
+import ingExceptions from "./smoothing/ing_exceptions";
 import itCities from "./tagging/cities";
-import itContractions from "./tagging/contractions";
-import itMeta from "./tagging/meta";
-import itPrefixes from "./tagging/prefixes";
-import itSuffixes from "./tagging/suffixes";
 import itComplexWords from "./tagging/complex_words";
+import itContractions from "./tagging/contractions";
+import itGivenNames from "./tagging/given_names";
+import itLexiconLookup from "./tagging/lexicon";
+import itMeta from "./tagging/meta";
+import itNonLetters from "./tagging/non_letters";
+import itPotentialProper from "./tagging/potential_proper";
+import itPrefixes from "./tagging/prefixes";
 import itRepetitive from "./tagging/repetitive";
 import itSlang from "./tagging/slang";
-import itPotentialProper from "./tagging/potential_proper";
+import itSuffixes from "./tagging/suffixes";
+
 // smoothing rules and conditions
-import {rules as brillRules} from "./smoothing/brill_rules";
-import {conditions as brillConditions} from "./smoothing/brill_conditions";
-import ingExceptions from "./smoothing/ing_exceptions";
+
+
+
 
 // Meta object provided by the lexer
 export interface MetaObject {
