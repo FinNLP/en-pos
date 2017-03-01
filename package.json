@@ -1,12 +1,12 @@
 {
   "name": "en-pos",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A better English POS tagger written in JavaScript",
   "main": "./dist/index.js",
-  "types":"./dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "test": "node test/test",
-    "build":"tsc"
+    "build": "tsc"
   },
   "author": "Alex Corvi <alex@arrayy.com>",
   "license": "MIT",
@@ -37,5 +37,8 @@
   "bugs": {
     "url": "https://github.com/finnlp/en-pos/issues"
   },
-  "homepage": "https://github.com/finnlp/en-pos#readme"
+  "homepage": "https://github.com/finnlp/en-pos#readme",
+  "devDependencies": {
+    "@types/node": "^7.0.5"
+  }
 }
