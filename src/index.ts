@@ -220,15 +220,15 @@ class Tag {
 
 
 	public smooth = function():Result{
-		this.PreBrill();
-		this.Brill();
-		this.PostBrill();
+		this._PreBrill();
+		this._Brill();
+		this._PostBrill();
 		return this;
 	}
 
 
 
-	private PreBrill = function(){
+	private _PreBrill = function(){
 		for (let i = 0; i < this.tags.length; i++) {
 			if(this.blocked[i]) continue;
 			let tag = this.tags[i];
@@ -330,7 +330,7 @@ class Tag {
 
 
 
-	private applyBrillRule = function(index:number,iteration:number){
+	private _applyBrillRule = function(index:number,iteration:number){
 		for (var i = 0; i < brillRules.length; i++) {
 			let rule = brillRules[i];
 			if(rule.from !== this.tags[index] || (rule.secondRun && iteration === 1)) continue;
@@ -511,20 +511,20 @@ class Tag {
 
 
 
-	private Brill = function(){
+	private _Brill = function(){
 		for (var i = 0; i < this.tags.length; i++) {
 			if(this.blocked[i]) continue;
-			this.applyBrillRule(i,1);
+			this._applyBrillRule(i,1);
 		}
 		for (var i = 0; i < this.tags.length; i++) {
 			if(this.blocked[i]) continue;
-			this.applyBrillRule(i,2);
+			this._applyBrillRule(i,2);
 		}
 	}
 
 
 
-	private PostBrill = function(){
+	private _PostBrill = function(){
 		for (let i = 0; i < this.tags.length; i++) {
 
 			if(this.blocked[i]) continue;
