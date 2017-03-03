@@ -158,7 +158,7 @@ class Tag {
 			let complexWordsResolution = itComplexWords(token);
 			if(complexWordsResolution) {
 				this.tags[i] = complexWordsResolution;
-				this.confidence = 0.5;
+				this.confidence[i] = 0.5;
 				this.blocked = false;
 				continue;
 			}
@@ -166,7 +166,7 @@ class Tag {
 			let prefixBasedResolution = itPrefixes(token);
 			if(prefixBasedResolution) {
 				this.tags[i] = prefixBasedResolution;
-				this.confidence = 0.5;
+				this.confidence[i] = 0.5;
 				this.blocked = false;
 				continue;
 			}
@@ -174,7 +174,7 @@ class Tag {
 			let suffixBasedResolution = itSuffixes(token);
 			if(suffixBasedResolution) {
 				this.tags[i] = suffixBasedResolution;
-				this.confidence = 0.5;
+				this.confidence[i] = 0.5;
 				this.blocked = false;
 				continue;
 			}
@@ -183,7 +183,7 @@ class Tag {
 			let repititionResolution = itRepetitive(token);
 			if(repititionResolution) {
 				this.tags[i] = repititionResolution;
-				this.confidence = 0.5;
+				this.confidence[i] = 0.5;
 				this.blocked = false;
 				continue;
 			}
@@ -191,7 +191,7 @@ class Tag {
 			let slangResolution = itSlang(token);
 			if(slangResolution) {
 				this.tags[i] = slangResolution;
-				this.confidence = 0.5;
+				this.confidence[i] = 0.5;
 				this.blocked = false;
 				continue;
 			};
@@ -200,7 +200,7 @@ class Tag {
 			let potentialProperResolution = itPotentialProper(token);
 			if(potentialProperResolution) {
 				this.tags[i] = potentialProperResolution;
-				this.confidence = 0.5;
+				this.confidence[i] = 0.5;
 				this.blocked = false;
 				continue;
 			}
@@ -208,7 +208,7 @@ class Tag {
 			// defaulting
 			if(new inflectors.Inflectors(token).isPlural()) {
 				this.tags[i] = "NNS";
-				this.confidence = 0;
+				this.confidence[i] = 0;
 				this.blocked = false;
 				continue;
 			}
