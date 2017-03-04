@@ -159,7 +159,7 @@ class Tag {
 			if(complexWordsResolution) {
 				this.tags[i] = complexWordsResolution;
 				this.confidence[i] = 0.5;
-				this.blocked = false;
+				this.blocked[i] = false;
 				continue;
 			}
 
@@ -167,7 +167,7 @@ class Tag {
 			if(prefixBasedResolution) {
 				this.tags[i] = prefixBasedResolution;
 				this.confidence[i] = 0.5;
-				this.blocked = false;
+				this.blocked[i] = false;
 				continue;
 			}
 
@@ -175,7 +175,7 @@ class Tag {
 			if(suffixBasedResolution) {
 				this.tags[i] = suffixBasedResolution;
 				this.confidence[i] = 0.5;
-				this.blocked = false;
+				this.blocked[i] = false;
 				continue;
 			}
 
@@ -184,7 +184,7 @@ class Tag {
 			if(repititionResolution) {
 				this.tags[i] = repititionResolution;
 				this.confidence[i] = 0.5;
-				this.blocked = false;
+				this.blocked[i] = false;
 				continue;
 			}
 
@@ -192,7 +192,7 @@ class Tag {
 			if(slangResolution) {
 				this.tags[i] = slangResolution;
 				this.confidence[i] = 0.5;
-				this.blocked = false;
+				this.blocked[i] = false;
 				continue;
 			};
 
@@ -201,7 +201,7 @@ class Tag {
 			if(potentialProperResolution) {
 				this.tags[i] = potentialProperResolution;
 				this.confidence[i] = 0.5;
-				this.blocked = false;
+				this.blocked[i] = false;
 				continue;
 			}
 
@@ -209,7 +209,7 @@ class Tag {
 			if(new inflectors.Inflectors(token).isPlural()) {
 				this.tags[i] = "NNS";
 				this.confidence[i] = 0;
-				this.blocked = false;
+				this.blocked[i] = false;
 				continue;
 			}
 			this.tags[i] = "NN";
