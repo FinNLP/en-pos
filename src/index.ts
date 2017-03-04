@@ -25,25 +25,25 @@ import itSuffixes from "./tagging/suffixes";
 
 // Meta object provided by the lexer
 export interface MetaObject {
-	pos?:any
-	tag?:any
-	yearlyRange?:any
-	time?:any
-	ratio?:any
-	timeIndicator?:any
-	order?:any
-	hyphenedOrder?:any
-	number?:any
-	abbrev?:any
-	properNoun?:any
-	acronym?:any
-	meta?:any
+	pos?:any;
+	tag?:any;
+	yearlyRange?:any;
+	time?:any;
+	ratio?:any;
+	timeIndicator?:any;
+	order?:any;
+	hyphenedOrder?:any;
+	number?:any;
+	abbrev?:any;
+	properNoun?:any;
+	acronym?:any;
+	meta?:any;
 }
 
 export interface Result {
-	tokens:Array<string>,
-	tags:Array<Object>,
-	confidence:Array<number>
+	tokens:Array<string>;
+	tags:Array<Object>;
+	confidence:Array<number>;
 }
 
 class Tag {
@@ -215,7 +215,7 @@ class Tag {
 			this.tags[i] = "NN";
 		}
 		return this;
-	}
+	};
 
 
 
@@ -224,7 +224,7 @@ class Tag {
 		this._Brill();
 		this._PostBrill();
 		return this;
-	}
+	};
 
 
 
@@ -285,13 +285,13 @@ class Tag {
 					(prev1Tag === "IN" && prev2Tag === "JJR") ||
 					(prev1Tag === "JJR")
 				){
-					this.tags[i] === "VBN";
+					this.tags[i] = "VBN";
 					continue;
 				}
 			}
 
 			if(token.length > 3 && (!lexicon.lexicon[token]) && prev1Tag && (!~token.indexOf("-")) && (!/^[A-Z][a-z]+/g.test(this.tokens[i])) && /[^e]ed$/.test(token)){
-				this.tags[i] === "VBN";
+				this.tags[i] = "VBN";
 				continue;
 			}
 			
@@ -302,7 +302,7 @@ class Tag {
 				(!~ingExceptions.indexOf(token)) && (!lexicon.lexicon[token]) &&
 				~(lexicon.lexicon[token]||"").indexOf("VBG")
 			) {
-				this.tags[i] === "VBG";
+				this.tags[i] = "VBG";
 				continue;
 			}
 			
@@ -311,7 +311,7 @@ class Tag {
 				(prev1Tag !== 'NN' && prev1Tag !== 'JJ' && prev1Tag !== 'DT' && prev1Tag !== 'VBG') &&
 				(~(lexicon.lexicon[token+"g"]||"").indexOf("VBG"))
 			) {
-				this.tags[i] === "VBG";
+				this.tags[i] = "VBG";
 				continue;
 			}
 
@@ -326,7 +326,7 @@ class Tag {
 			}
 
 		}
-	}
+	};
 
 
 
@@ -507,7 +507,7 @@ class Tag {
 				continue;
 			}
 		}
-	}
+	};
 
 
 
@@ -520,7 +520,7 @@ class Tag {
 			if(this.blocked[i]) continue;
 			this._applyBrillRule(i,2);
 		}
-	}
+	};
 
 
 
@@ -747,7 +747,7 @@ class Tag {
 						(prev1Tag === "DT" && prev2Tag === "IN") ||
 						(prev1Tag === "VBP" && prev2Tag.startsWith("N") && prev3Tag === "DT") ||
 						((prev2Tag === "MD"||prev2Tag === "TO") && prev1Tag === "VB") ||
-						(prev1Tag == "VBD") ||
+						(prev1Tag === "VBD") ||
 						(prev1Token === "has" || prev1Token === "have") ||
 						(prev1Token === "being" || prev1Token === "be") ||
 						(prev1Token === "been") ||
@@ -760,7 +760,7 @@ class Tag {
 				}
 			}
 		}
-	}
+	};
 
 }
 
