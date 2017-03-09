@@ -60,7 +60,7 @@ class Tag {
 
 
 
-	constructor(tokens:Array<string>,meta:Array<MetaObject>){
+	constructor(tokens:Array<string>,meta?:Array<MetaObject>){
 		this.tokens = tokens;
 		this.meta = meta || [];
 
