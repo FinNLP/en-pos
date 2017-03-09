@@ -21,7 +21,7 @@ const rules:Array<NonLetterDetector> = [
 		pos:","
 	},
 	{
-		regex:/^[%\+\-\/@]$/,
+		regex:/^[%\+\/@]$/,
 		pos:"SYM"
 	},
 	{
