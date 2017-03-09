@@ -44,6 +44,8 @@ export interface Result {
 	tokens:Array<string>;
 	tags:Array<Object>;
 	confidence:Array<number>;
+	smooth:()=>Result;
+	initial:()=>Result;
 }
 
 class Tag {
