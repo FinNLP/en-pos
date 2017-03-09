@@ -1,8 +1,6 @@
 /// <reference path="../../node_modules/@types/node/index.d.ts"/>
 /// <reference path="../../node_modules/@types/mocha/index.d.ts"/>
 const assert = require("assert");
-
-
 import cities from "../../src/tagging/cities";
 describe("Cities",function(){
     describe("Cities sensitive case",function(){
