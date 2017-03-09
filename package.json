@@ -5,8 +5,10 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "node test/test",
-    "build": "tsc"
+    "test": "mocha",
+    "build": "tsc",
+    "wsj": "ts-node test/wsj/wsj.ts",
+    "prepublish": "mocha && ts-node test/wsj/wsj.ts && tsc"
   },
   "author": "Alex Corvi <alex@arrayy.com>",
   "license": "MIT",
