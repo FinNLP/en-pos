@@ -6,7 +6,7 @@ const list =<Array<Array<string>>> [
 	["why","y"],
 	["ok","k","okay","o.k.","oki","okey-dokey","okey-doke"],
 	["alright","alrighty"],
-	["them","'em"],
+	["them","'em","dem"],
 	["you","ya","ye","u"],
 	["your","yo"],
 	["because","cuz","b/c"],
