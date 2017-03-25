@@ -42,7 +42,7 @@ export interface MetaObject {
 
 export interface Result {
 	tokens:Array<string>;
-	tags:Array<Object>;
+	tags:Array<string>;
 	confidence:Array<number>;
 	smooth:()=>Result;
 	initial:()=>Result;
@@ -124,9 +124,9 @@ class Tag {
 			
 
 			// Semi dictionary stage
-			let lexiconInsensistive = itLexiconLookup(token);
-			if(lexiconInsensistive) {
-				this.tags[i] = lexiconInsensistive;
+			let lexiconInsensitive = itLexiconLookup(token);
+			if(lexiconInsensitive) {
+				this.tags[i] = lexiconInsensitive;
 				this.confidence[i] = 0.8;
 				this.blocked[i] = false;
 				continue;
@@ -182,9 +182,9 @@ class Tag {
 			}
 
 			// Irregular stage
-			let repititionResolution = itRepetitive(token);
-			if(repititionResolution) {
-				this.tags[i] = repititionResolution;
+			let repetitionResolution = itRepetitive(token);
+			if(repetitionResolution) {
+				this.tags[i] = repetitionResolution;
 				this.confidence[i] = 0.5;
 				this.blocked[i] = false;
 				continue;
@@ -542,6 +542,21 @@ class Tag {
 			let prev2Token = (this.tokens[i-2] || "").toLowerCase();
 			let next1Token = (this.tokens[i+1] || "").toLowerCase();
 			let next2Token = (this.tokens[i+2] || "").toLowerCase();
+
+			if(token === "'s" && ~["PRP","EX","DT"].indexOf(prev1Tag)) {
+				this.tags[i] = "VB";
+				continue;
+			}
+
+			if(i===0 && this.tokens[0] === "May") {
+				this.tags[0] = "MD";
+				continue;
+			}
+
+			if(token === "like" && prev1Tag === "MD") {
+				this.tags[i] = "VB";
+				continue;
+			}
 
 			// token based transformations
 			if(~["only","is","that","much","while","in"].indexOf(token)) {

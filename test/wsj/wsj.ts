@@ -43,7 +43,7 @@ console.log(`	Tested: ${tested}`);
 console.log(`	Correct: ${correct}`);
 console.log(`	Wrong: ${wrong}`);
 
-if(percent < 96.427) {
+if(percent < 96.3) {
 	console.log("Lower than before!!");
 	process.exit(1);
 }
