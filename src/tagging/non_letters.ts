@@ -37,6 +37,14 @@ const rules:Array<NonLetterDetector> = [
 		pos:"\""
 	},
 	{
+		regex:/^\d+(rd|st|th)$/,
+		pos:"CD",
+	},
+	{
+		regex:/^(\d+)((\/|\\)\d+)((\/|\\)\d+)?$/,
+		pos:"CD"
+	},
+	{
 		regex:/^((\d{1,3})+(,\d{3})*(\.\d+)?)$/,
 		pos:"CD"
 	}

@@ -543,19 +543,22 @@ class Tag {
 			let next1Token = (this.tokens[i+1] || "").toLowerCase();
 			let next2Token = (this.tokens[i+2] || "").toLowerCase();
 
-			if(token === "'s" && ~["PRP","EX","DT"].indexOf(prev1Tag)) {
-				this.tags[i] = "VB";
-				continue;
-			}
-
-			if(i===0 && this.tokens[0] === "May") {
-				this.tags[0] = "MD";
-				continue;
-			}
-
 			if(token === "like" && prev1Tag === "MD") {
 				this.tags[i] = "VB";
 				continue;
+			}
+
+			if(prev1Token === "was" && token.endsWith("ing")) {
+				this.tags[i] = "VBG";
+				continue;
+			}
+
+			if(prev1Tag === "PRP" && tag.startsWith("N")) {
+				let alt = lexicon.lexicon[token].split("|").find(x=>!x.startsWith("N"));
+				if(alt) {
+					this.tags[i] = alt;
+					continue;
+				}
 			}
 
 			// token based transformations

@@ -12,7 +12,8 @@ console.log(" 	");
 console.log("	---------------------------");
 console.log("	Starting Penn Treebank test");
 
-wsj.forEach((sample:any,index:number)=>{
+for (var index = 0; index < wsj.length; index++) {
+	var sample = wsj[index];
 	if(index%1000 === 0) console.log("	",index);
 	if(index === wsj.length - 1) console.log("	",index);
 	new Tag(sample.tokens).initial().smooth().tags.forEach((answer,index,tags)=>{
@@ -34,7 +35,8 @@ wsj.forEach((sample:any,index:number)=>{
 			});
 		}
 	});
-});
+};
+
 
 const percent = Math.round((correct/tested)*100*1000)/1000;
 
