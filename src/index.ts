@@ -554,7 +554,7 @@ class Tag {
 			}
 
 			if(prev1Tag === "PRP" && tag.startsWith("N")) {
-				let alt = lexicon.lexicon[token].split("|").find(x=>!x.startsWith("N"));
+				let alt = (lexicon.lexicon[token]||"").split("|").find(x=>!x.startsWith("N"));
 				if(alt) {
 					this.tags[i] = alt;
 					continue;
